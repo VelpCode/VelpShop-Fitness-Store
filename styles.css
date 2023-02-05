@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: blue;
 }
 
 .container {
@@ -26,6 +27,11 @@ body {
     border-radius: 15px;
     box-shadow: 4px 4px 30px rgba(0,0,0,0.06);
     padding: 20px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .container form{
@@ -38,7 +44,7 @@ body {
 }
 
 .container form input {
-    border:none;
+    border: none;
     outline: none;
     box-shadow: none;
     width: 100%;
@@ -53,13 +59,14 @@ body {
 
 .product-list {
     padding: 20px 0;
-    
+
 }
 
 .product {
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding-bottom: 15px;
 }
 
 .product img{
